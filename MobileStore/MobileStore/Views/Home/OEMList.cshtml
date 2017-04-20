@@ -1,0 +1,40 @@
+﻿@model IEnumerable<MobileStore.Models.ModelOEM>
+
+@{
+    Layout = null;
+    int numberOfColumns = 3;
+    int skip = 0;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>OEMList</title>
+</head>
+<body>
+@if (User.IsInRole("Admin"))
+{
+    <p style="margin-top:30px">
+        @Html.ActionLink("Create New", "CreateOEM", "Admin", null, null)
+    </p>
+}
+    <div class="btn btn-block">@Html.ActionLink("All Brands", "GetOEMPhones", "Home", 0, null)</div>
+    <div class="container" style="background-color:antiquewhite; margin:6px; text-align:center; text-decoration:none;">
+        @while (Model.Count() > skip)
+        {
+            var columnCount = Model.Skip(skip).Take(numberOfColumns);
+            <div class="row" style="padding-bottom:5px; padding-top:5px; padding-left:10px; padding-right:10px;">
+                @foreach (var item in columnCount)
+                {
+                <div class="col-sm-4" style="color:azure;">
+                    @Html.ActionLink(item.Name, "GetOEMPhones", "Home", new { oemID = item.ID }, null)
+                </div>
+                }
+            </div>
+            skip += numberOfColumns;
+        }
+    </div>
+</body>
+</html>

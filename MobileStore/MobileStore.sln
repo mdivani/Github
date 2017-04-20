@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileStore", "MobileStore\MobileStore.csproj", "{3C8D5A1A-DBB7-47F8-991D-6F714F290729}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileStore.Domain", "MobileStore.Domain\MobileStore.Domain.csproj", "{FC7F6B3C-A31F-4A1D-B6E6-A28C104BF868}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileStore.Repository", "MobileStore.Repository\MobileStore.Repository.csproj", "{82391DAE-9FFB-4DBA-BE50-7E662EFC10B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileStore.Service", "MobileStore.Service\MobileStore.Service.csproj", "{A9FD4525-1809-453A-A1FC-E8DC2F25489C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C8D5A1A-DBB7-47F8-991D-6F714F290729}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C8D5A1A-DBB7-47F8-991D-6F714F290729}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C8D5A1A-DBB7-47F8-991D-6F714F290729}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C8D5A1A-DBB7-47F8-991D-6F714F290729}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC7F6B3C-A31F-4A1D-B6E6-A28C104BF868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC7F6B3C-A31F-4A1D-B6E6-A28C104BF868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC7F6B3C-A31F-4A1D-B6E6-A28C104BF868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC7F6B3C-A31F-4A1D-B6E6-A28C104BF868}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82391DAE-9FFB-4DBA-BE50-7E662EFC10B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82391DAE-9FFB-4DBA-BE50-7E662EFC10B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82391DAE-9FFB-4DBA-BE50-7E662EFC10B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82391DAE-9FFB-4DBA-BE50-7E662EFC10B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9FD4525-1809-453A-A1FC-E8DC2F25489C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9FD4525-1809-453A-A1FC-E8DC2F25489C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9FD4525-1809-453A-A1FC-E8DC2F25489C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9FD4525-1809-453A-A1FC-E8DC2F25489C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://149.3.115.10:8080/tfs/studentscollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MobileStore\\MobileStore.csproj
+		SccProjectName1 = MobileStore
+		SccLocalPath1 = MobileStore
+		SccProjectUniqueName2 = MobileStore.Domain\\MobileStore.Domain.csproj
+		SccProjectName2 = MobileStore.Domain
+		SccLocalPath2 = MobileStore.Domain
+		SccProjectUniqueName3 = MobileStore.Repository\\MobileStore.Repository.csproj
+		SccProjectName3 = MobileStore.Repository
+		SccLocalPath3 = MobileStore.Repository
+		SccProjectUniqueName4 = MobileStore.Service\\MobileStore.Service.csproj
+		SccProjectName4 = MobileStore.Service
+		SccLocalPath4 = MobileStore.Service
+	EndGlobalSection
+EndGlobal

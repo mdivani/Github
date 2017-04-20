@@ -1,0 +1,113 @@
+﻿@model MobileStore.Models.CreatePhoneModel
+
+@{
+    ViewBag.Title = "PhoneDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <h4>Add Phone</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhoneName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Model)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Model)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Resolution)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Resolution)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GPU)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GPU)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CPU)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CPU)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MainCamera)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MainCamera)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SecondaryCamera)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SecondaryCamera)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BatteryCapacity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BatteryCapacity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RealseDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RealseDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+    </dl>
+</div>
+@if (User.IsInRole("Admin")){
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
+else
+{<p>
+    @Html.ActionLink("Back to List", "Index")
+</p> 
+}
+

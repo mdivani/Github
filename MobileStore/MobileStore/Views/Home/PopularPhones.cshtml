@@ -1,0 +1,31 @@
+﻿@model IEnumerable<MobileStore.Models.TopPhonesModel>
+
+@{
+    ViewBag.Title = "PopularPhones";
+    Layout = null;
+    int count = 1;
+}
+
+<table class="table table-striped">
+    <tr>
+        <th style="text-align:left">
+            Popular Phones
+        </th>
+        <th style="text-align:right">
+            Total hits
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <span>@count</span>.
+                @Html.ActionLink(item.Name, "PhoneDetails", new { id = item.ID }, null)
+            </td>
+            <td style="text-align:right">
+                @item.Views
+            </td>
+        </tr>
+        count++;
+    }
+</table>
